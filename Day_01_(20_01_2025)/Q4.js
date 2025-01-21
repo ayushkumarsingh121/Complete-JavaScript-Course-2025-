@@ -4,16 +4,16 @@
 // name of the visitor becomes key, and emotion becomes value
 
 var parkEmotionData = {
-  vivek : "good",
-  mahesg : "bad",
-  suresh : "bad"
 }
 
 // 'vivek' is feeling 'good'
-// 'mahesh' is feeling 'bad'
-// 'suresh' is feeling 'bad'
+parkEmotionData.vivek = "good";
 
-for(let name in parkEmotionData){
-  console.log(`${name} is feeling ${parkEmotionData[name]}`)
-} // expect object with 3 properties
+// 'mahesh' is feeling 'bad'
+parkEmotionData["mahesh"] = "bad";
+
+// 'suresh' is feeling 'bad'
+parkEmotionData.suresh = "bad";
+
+console.log(parkEmotionData) // expect object with 3 properties
 
